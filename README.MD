@@ -11,14 +11,13 @@
 - (void)wx_showBadge:(NSString *)badgeText appearance:(nonnull WXBadgeAppearance *)appearance edgeInset:(UIEdgeInsets)inset;
 ```
 
-when your pass nil badgeText to interface
-The badge will be removed
+#### When your pass nil badgeText to interface, The badge will be removed
 
 ```
 [view wx_showBadge:nil];
 ```
 
-set badge appearance
+#### Set badge appearance
 
 ```
 WXBadgeAppearance *appearance = [WXBadgeAppearance new];
@@ -29,7 +28,7 @@ appearance.textColor = [UIColor whiteColor];
 [yellowButton wx_showBadge:@"hahahaha" appearance:appearance];
 ```
 
-Badge Appearance Property
+#### Badge Appearance Property
 
 ```
 @property (nonatomic, strong)UIColor* backgroundColor;
@@ -47,5 +46,5 @@ Badge Appearance Property
 
 ### import
 
-import file
+import files
 "UIView+WXBadge.h" and "UIView+WXBadge.m" to your project
